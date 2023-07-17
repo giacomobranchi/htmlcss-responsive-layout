@@ -2,4 +2,71 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+/* #region common */
+
+header{
+    background-color: #0084fd;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* #endregion common */
+
+
+/* #region utilities */
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+}
+
+.d_flex{
+    display: flex;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.align_items_center{
+    align-items: center;
+}
+
+/* #endregion utilities */
+
+/* #region header */
+
+.head_menu{
+    display: none;
+}
+
+.bars{
+    color: white;
+}
+
+.logo, .bars, .head_menu{
+    padding: 1rem;
+}
+
+
+
+@media screen and (min-width:768px) {
+    
+}
+
+@media screen and (min-width: 1160px) {
+    .bars{
+        display: none;
+    }
+
+    .head_menu{
+        display: block;
+    }
 }
