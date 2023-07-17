@@ -10,6 +10,7 @@
 
 header{
     background-color: #0084fd;
+    margin-bottom: 2rem ;
 }
 
 a{
@@ -50,6 +51,12 @@ a{
     color: black;
 }
 
+
+
+.col-12{
+    width:100%;
+}
+
 /* #endregion utilities */
 
 /* #region header */
@@ -71,18 +78,103 @@ a{
     padding: 1rem 0;
 }
 
+/* #endregion header */
 
+/* #region main */
 
-@media screen and (min-width:768px) {
-    
+.card{
+    background-color: #b5ddff;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    margin: 1rem 0;
+    text-align: center;
 }
 
-@media screen and (min-width: 1160px) {
+.demo-txt{
+    text-align: start;
+    margin-left: 1rem;
+}
+
+.demo-txt div{
+    margin: 1rem 0;
+}
+
+.btn_blue{
+    background-color:  #0084fd;
+    padding: 0.5rem 4rem;
+}
+
+.card div{
+    padding: 1rem 0;
+}
+
+.card-icon{
+    font-size: 5rem;
+}
+
+.card h2{
+    padding: 1rem 0;
+}
+
+.demo img{
+    width: 100%;
+}
+
+.card-icon, .card h2{
+    color: #0084fd;
+}
+
+/* #endregion main */
+
+@media screen and (min-width:768px) {
+    .col-4{
+        width: calc(100% / 12 * 4);
+    }
+    
+    .col-8{
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-4, .col-8{
+        padding: 0 1rem;
+        padding-top: 1rem;
+    }
+
+    .info_row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .demo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .demo img{
+        width: 50%;
+    }
+
+    .card{
+        height: 100%;
+        line-height: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
     .bars{
         display: none;
     }
 
     .head_menu{
         display: block;
+    }
+
+    .demo{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
     }
 }
