@@ -359,6 +359,10 @@ footer .d_flex{
     justify-content: space-between;
 }
 @media screen and (min-width:426px) {
+    .container{
+        max-width: 738px;
+    }
+
     .col-4{
         width: calc(100% / 12 * 4);
     }
@@ -421,6 +425,10 @@ footer .d_flex{
 }
 
 @media screen and (min-width: 769px) {
+    .container{
+        max-width: 1170px;
+    }
+    
     .bars{
         display: none;
     }
