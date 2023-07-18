@@ -32,6 +32,7 @@ a{
 .container_sm{
     max-width: 425px;
     margin: auto;
+    width: 90%;
 }
 .d_flex{
     display: flex;
@@ -300,6 +301,10 @@ a{
     padding: 1rem 0;
 }
 
+/* #endregion .about */
+
+/* #region .action */
+
 .action{
     text-align: center;
     background-color: #9792e4;
@@ -332,6 +337,26 @@ a{
 
 .copyright{
     font-size: 0.7rem;
+}
+
+/* #endregion .action */
+
+/* #region footer */
+
+footer{
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer div{
+    font-size: 12px;
+}
+
+footer .d_flex{
+    flex-direction: column;
+    justify-content: space-between;
 }
 @media screen and (min-width:426px) {
     .col-4{
