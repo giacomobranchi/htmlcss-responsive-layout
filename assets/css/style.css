@@ -25,7 +25,7 @@ a{
 
 .container{
     margin: auto;
-    max-width: 1200px;
+    max-width: 1170px;
     width: 90%;
 }
 
@@ -51,7 +51,19 @@ a{
     color: black;
 }
 
+.btn_blue{
+    background-color:  #0084fd;
+    padding: 0.5rem 4rem;
+}
 
+.btn_purple{
+    background-color: #9792e4;
+    width: fit-content;
+    padding: 0.3rem 2rem;
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
 
 .col-12{
     width:100%;
@@ -100,10 +112,6 @@ a{
     margin: 1rem 0;
 }
 
-.btn_blue{
-    background-color:  #0084fd;
-    padding: 0.5rem 4rem;
-}
 
 .card div{
     padding: 1rem 0;
@@ -148,6 +156,11 @@ a{
     border-radius: 1rem;
     color: black;
     padding: 1rem 0;
+    margin-bottom: 1rem
+}
+
+.planning-txt{
+    font-style: italic;
 }
 
 .plan-arrow{
@@ -168,6 +181,87 @@ a{
 }
 
 /* #endregion .planning */
+
+/* #region .testimonials */
+
+.testimonials{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.testimonials h2{
+    font-weight: 100;
+}
+
+.testimonials h1{
+    color: #9792e4;
+    padding: 2rem;
+}
+
+.testimonial-card{
+    width: 100%;
+    color: white;
+    line-height: 2rem;
+}
+
+.testimonial-card{
+    flex-direction: column;
+    background-color: #9792e4;
+    border-radius: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.testimonial-card img{
+    width: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+/* #endregion .testimonials */
+
+/* #region .benefits */
+
+.benefits{
+    background-color: #9792e4;
+}
+
+.benefits h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.benefit-row{
+    flex-direction: column;
+}
+
+.benefit-col{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+}
+
+.benefit-card{
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.benefit-num{
+    font-size: 3rem;
+}
+
+.benefit-num, .benefit-card h3{
+    color: #9792e4;
+    padding: 0.5rem 0;
+}
+
+/* #endregion .benefits */
+
+/* #region .about */
 
 @media screen and (min-width:768px) {
     .col-4{
@@ -203,6 +297,23 @@ a{
         line-height: 2rem;
     }
 
+    .testimonial-card{
+        flex-direction: row;
+    }
+
+    .testimonial-card img{
+        width: 20%;
+        padding: 1rem;
+    }
+
+    .benefit-col{
+        width: calc(100% / 12 * 6);
+    }
+
+    .benefit-row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -249,4 +360,12 @@ a{
         margin-top: 4rem;
     }
     
+    .testimonial-card img{
+        width: 10%;
+    }
+
+    .benefit-col{
+        width: calc(100% / 12 * 4);
+    }
+
 }
