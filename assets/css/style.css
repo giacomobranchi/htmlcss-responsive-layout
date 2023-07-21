@@ -58,7 +58,7 @@ a{
 
 .btn_blue{
     background-color:  #0084fd;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 2.5rem;
 }
 
 .btn_purple{
@@ -218,7 +218,7 @@ a{
 }
 
 .testimonial-card img{
-    width: 50%;
+    max-width: 50%;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%; 
@@ -385,6 +385,7 @@ footer .d_flex{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
     }
 
     .demo img{
@@ -441,7 +442,7 @@ footer .d_flex{
         flex-direction: row;
         display: flex;
         justify-content: space-between;
-
+        align-items: flex-end;
     }
 
     .col-5{
